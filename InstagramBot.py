@@ -5,6 +5,7 @@ from tkinter import simpledialog
 import time
 import random
 
+# author: Pablo Biedma ig: pablo_biedma
 
 class InstagramBot:   # todo add functionality , then develop app
 
