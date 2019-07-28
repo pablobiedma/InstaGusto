@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcbbfff7-6f32-42cf-9e78-ac4d3f895ccc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstagramBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/InstagramBot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,7 +82,7 @@
       <workItem from="1564308289989" duration="1138000" />
       <workItem from="1564309573781" duration="10560000" />
       <workItem from="1564332372676" duration="1082000" />
-      <workItem from="1564333474630" duration="33000" />
+      <workItem from="1564333474630" duration="482000" />
     </task>
     <servers />
   </component>
