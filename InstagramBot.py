@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import tkinter as tk
 from tkinter import simpledialog
+from pynput.keyboard import Key, Controller
 import time
 import random
 
@@ -51,7 +52,7 @@ class InstagramBot:   # todo add functionality , then develop app
             except Exception:
                 continue
 
-        # Liking photos
+        # Liking photos & commenting
         unique_photos = len(pic_hrefs)
         for pic_href in pic_hrefs:
             driver.get(pic_href)
@@ -60,8 +61,17 @@ class InstagramBot:   # todo add functionality , then develop app
             try:
                 time.sleep(random.randint(2, 4))
                 like_button = lambda: driver.find_element_by_xpath('//span[@aria-label="Like"]').click()
+                keyboard = Controller()
+                comment_button = lambda: driver.find_element_by_xpath('//span[@aria-label="Comment"]').click()
+                post_button = lambda: driver.find_element_by_class_name("_0mzm- sqdOP yWX7d        ").click()
                 like_button().click()
-                time.sleep(1)
+                time.sleep(0.25)
+                comment_button().click()
+                time.sleep(0.25)
+                keyboard.type("Amazing")
+                time.sleep(0.25)
+                post_button().click()
+                time.sleep(0.25)
             except Exception as e:
                 time.sleep(2)
             unique_photos -= 1
