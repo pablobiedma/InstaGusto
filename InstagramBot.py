@@ -4,7 +4,7 @@ import time
 import random
 
 
-class InstagramBot:   # todo change some stuff and add inputs, add functionality , then develope app
+class InstagramBot:   # todo add functionality , then develop app
 
     def __init__(self, username, password):
         self.username = username
@@ -66,13 +66,13 @@ class InstagramBot:   # todo change some stuff and add inputs, add functionality
 
 if __name__ == "__main__":
 
-    username = "pablo_biedma"
-    password = "password"
+    username = input('Please enter your instagram username')
+    password = input('Please enter your password')
 
     ig = InstagramBot(username, password)
     ig.login()
 
-    hashtags = ['fitness', 'mindfulness', 'adventure', 'photography', 'nofilter',
+    hashtags = ['fitness', 'mindfulness', 'adventure', 'photography', 'nofilter','seekdiscomfort',
                 'motivation', 'billywilder', 'trip', 'wanderlust', 'travel', 'travelling', 'discomfort', 'yestheory',
                 'cinema', 'movies', 'technology', 'programming', 'deeplearning', 'ai', 'machinelearning', 'datascience', 'science', 'nba', 'basketball', 'okc',
                 'gym', 'sports', 'music', 'guitar', 'waterpolo', 'athlete', 'ted','tedtalk','inspiration','workout','cybersecurity', 'data', 'math', 'computer', 'computerscience',
@@ -87,5 +87,5 @@ if __name__ == "__main__":
         except Exception:
             ig.closeBrowser()
             time.sleep(60)
-            ig = InstagramBot("pablo_biedma", "password")
+            ig = InstagramBot(username, password)
             ig.login()
