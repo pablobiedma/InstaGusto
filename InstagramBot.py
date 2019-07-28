@@ -1,5 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import tkinter as tk
+from tkinter import simpledialog
 import time
 import random
 
@@ -65,9 +67,16 @@ class InstagramBot:   # todo add functionality , then develop app
 
 
 if __name__ == "__main__":
+    ROOT = tk.Tk()
 
-    username = input('Please enter your instagram username')
-    password = input('Please enter your password')
+    ROOT.withdraw()
+    # the input dialog
+    username = simpledialog.askstring(title="Username",
+                                      prompt="Please enter your instagram username: ")
+    password = simpledialog.askstring(title="Password",
+                                      prompt="Please enter your password: ")
+
+    print("\nLoading Bot...")
 
     ig = InstagramBot(username, password)
     ig.login()
