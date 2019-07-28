@@ -84,11 +84,11 @@ if __name__ == "__main__":
     ig = InstagramBot(username, password)
     ig.login()
 
-    hashtags = ['amazing', 'beautiful', 'adventure', 'photography', 'nofilter',
-                'newyork', 'artsy', 'alumni', 'lion', 'best', 'fun', 'happy',
-                'art', 'funny', 'me', 'followme', 'follow', 'cinematography', 'cinema',
-                'love', 'instagood', 'instagood', 'followme', 'fashion', 'sun', 'scruffy',
-                'street', 'canon', 'beauty', 'studio', 'pretty', 'vintage', 'fierce']
+    hashtags = ['fitness', 'mindfulness', 'adventure', 'photography', 'nofilter',
+                'motivation', 'billywilder', 'trip', 'wanderlust', 'travel', 'travelling', 'discomfort', 'yestheory',
+                'cinema', 'movies', 'technology', 'programming', 'deeplearning', 'ai', 'machinelearning', 'datascience', 'science', 'nba', 'basketball', 'okc',
+                'gym', 'sports', 'music', 'guitar', 'waterpolo', 'athlete', 'ted','tedtalk','inspiration','workout','cybersecurity', 'data', 'math', 'computer', 'computerscience',
+                'followforfollowback', 'follow4followback', 'like4follow', 'followbackinstantly', 'like4likes', 'likeforlikes', 'likeforlikeback', 'likeforfollow','followforlike', 'follow4like','likesforlike', 'likes4like']
 
     while True:
         try:
