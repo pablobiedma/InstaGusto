@@ -13,7 +13,9 @@ them.
 To run this bot you’ll need:
 
 A version of ​ python ​ installed in your computer.
+
 Install ​ selenium ​ for python to run the bot in the browser. ​$ pip install selenium
+
 Install ​ geckodriver ​ from github
 
 Find geckodriver installation folder and get it out of that folder as you’ll need it together with your
