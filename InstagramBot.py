@@ -10,11 +10,11 @@ import random
 
 class InstagramBot:   # todo add functionality , then develop app
 
-    def __init__(self, username, password, comment):
+    def __init__(self, username, password):
         self.username = username
         self.password = password
         self.driver = webdriver.Firefox()
-        self.comment = comment
+        #self.comment = comment
 
     def close_browser(self):
         self.driver.close()
@@ -62,12 +62,12 @@ class InstagramBot:   # todo add functionality , then develop app
             try:
                 time.sleep(random.randint(2, 4))
                 like_button = driver.find_element_by_xpath('//span[@aria-label="Like"]').click()
-                comment_button = driver.find_element_by_xpath('//span[@aria-label="Comment"]').click()
+                #comment_button = driver.find_element_by_xpath('//span[@aria-label="Comment"]').click()
                 post_button = driver.find_element_by_xpath("/html/body/div[3]/div[2]/div/article/div[2]/section[3]/div/form/button").click()
                 # liking photo
                 like_button().click()
                 time.sleep(1)
-                comment_button().click()
+                #comment_button().click()
                 # typing comment
                 text_area = driver.find_element_by_xpath('/html/body/div[3]/div[2]/div/article/div[2]/section[3]/div/form/textarea')
                 text_area.clear()
@@ -89,10 +89,10 @@ if __name__ == "__main__":
     password = simpledialog.askstring(title="Password",
                                       prompt="Please enter your password: ",
                                       show="*")
-    comment = "Amazingg"
+    #comment = "Amazingg"
     print("\nLoading Bot...")
 
-    ig = InstagramBot(username, password, comment)
+    ig = InstagramBot(username, password)
     ig.login()
 
     hashtags = ['fitness', 'mindfulness', 'adventure', 'photography', 'nofilter','seekdiscomfort', 'business', 'ceo', 'fcb', 'chess',
@@ -110,5 +110,5 @@ if __name__ == "__main__":
         except Exception:
             # ig.closeBrowser()
             time.sleep(60)
-            ig = InstagramBot(username, password, comment)
+            ig = InstagramBot(username, password)
             ig.login()
