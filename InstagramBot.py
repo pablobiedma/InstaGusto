@@ -14,7 +14,6 @@ class InstagramBot:   # todo add functionality , then develop app
         self.username = username
         self.password = password
         self.driver = webdriver.Firefox()
-        #self.comment = comment
 
     def close_browser(self):
         self.driver.close()
@@ -30,7 +29,7 @@ class InstagramBot:   # todo add functionality , then develop app
         password_elem.clear()
         password_elem.send_keys(self.password)
         password_elem.send_keys(Keys.RETURN)
-        time.sleep(2)
+        time.sleep(4)
 
     def like_photo(self, hashtag):
         driver = self.driver
@@ -53,27 +52,16 @@ class InstagramBot:   # todo add functionality , then develop app
             except Exception:
                 continue
 
-        # Liking photos & commenting
+        # Liking photos
         unique_photos = len(pic_hrefs)
         for pic_href in pic_hrefs:
             driver.get(pic_href)
             time.sleep(2)
-            # driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             try:
-                time.sleep(random.randint(2, 4))
-                like_button = driver.find_element_by_xpath('//span[@aria-label="Like"]').click()
-                #comment_button = driver.find_element_by_xpath('//span[@aria-label="Comment"]').click()
-                post_button = driver.find_element_by_xpath("/html/body/div[3]/div[2]/div/article/div[2]/section[3]/div/form/button").click()
-                # liking photo
-                like_button().click()
-                time.sleep(1)
-                #comment_button().click()
-                # typing comment
-                text_area = driver.find_element_by_xpath('/html/body/div[3]/div[2]/div/article/div[2]/section[3]/div/form/textarea')
-                text_area.clear()
-                text_area.send_keys("hello world")
+                like_button = driver.find_element_by_xpath('//*[@aria-label="Like"]').click()
                 time.sleep(random.randint(1, 2))
-                post_button().click()
+                like_button().click()
+                time.sleep(random.randint(1, 2))
             except Exception as e:
                 time.sleep(2)
             unique_photos -= 1
@@ -95,11 +83,16 @@ if __name__ == "__main__":
     ig = InstagramBot(username, password)
     ig.login()
 
-    hashtags = ['fitness', 'mindfulness', 'adventure', 'photography', 'nofilter','seekdiscomfort', 'business', 'ceo', 'fcb', 'chess',
-                'motivation', 'billywilder', 'trip', 'wanderlust', 'travel', 'travelling', 'discomfort', 'yestheory', 'football', 'soccer',
-                'cinema', 'movies', 'technology', 'programming', 'deeplearning', 'ai', 'machinelearning', 'datascience', 'science', 'nba', 'basketball', 'okc',
-                'gym', 'sports', 'music', 'guitar', 'waterpolo', 'athlete', 'ted', 'inspiration','workout','cybersecurity', 'data', 'math', 'computer', 'computerscience',
-                'followforfollowback', 'follow4followback', 'like4follow', 'followbackinstantly', 'like4likes', 'likeforlikes', 'likeforlikeback', 'likeforfollow','followforlike', 'follow4like','likesforlike', 'likes4like']
+    hashtags = ["like4follow","likeforfollow", 'followforlike','follow4like', 'film', 'movies','movie', 'petersellers', 'screenplay', 'script', 'writer', 'montgomeryclift',
+                'films', 'kubrick', 'FrançoisTruffaut','clinteastwood', 'billywilder', 'alfredhitchcock', 'orsonwelles', 'johnford', 'kirkdouglas', 'jacklemmon', 'laurenceoliver', 'jamesdean',
+                'kurosawa', 'cameroncrowe', 'fritzlang', 'Clouzot', 'bergman', 'BibiAndersson', 'hepburn', 'jamesstewart', 'carygrant', 'marylinmonroe', 'perfectshot', 'howardhawks', 'WilliamWyler', 'dustinhoffman',
+                'photography', 'filmmaking', 'filmmaker', 'rosenberg', 'CesareZavattini', 'barbarastanwyck','clarkgable', 'vintage', 'director', 'charleslaughton','stevemcqueen', 'marlendietrich',
+                'hollywood', 'bettedavis', 'spencertracy', 'audreyhepburn', 'katherinhepburn', 'henryfonda', 'jamestewart', 'follow4follow'
+                , 'humphreybogart', 'fredmcmurray', 'shirleymclaine', 'davidlean' ,'peterotoole','josephcotten','gregorypeck','barbarastanwyck',
+                'edwardgrobinson','marlonbrando','alpacino','jamesmason','gracekelly','mankiewicz','georgesanders','annebaxter','sidneylumet','johnhuston','williamholden','maxvonsydow',
+                'burtlancaster','vittoriodesica','maxophuls','joanfontaine','victorfleming', 'paulettegoddard', 'yvesmontand','rexharrison','edithhead','johnwayne',
+                'maureenohara','kimnovak','marlenedietrich', 'johnlund','jamescagney','blakeedwards','waltermatthau','rossellini','frankcapra','glennford'
+                , 'charliechaplin', 'busterkeaton', 'joseluisgarci', 'satyajitray', 'ernstlubitsch','franksinatra','stephanzweig', 'ottopreminger', 'garycooper', 'nataliewood', 'gretagarbo', 'paulnewman', 'robertredford', 'tonycurtis', 'jacklemmon','michaelcurtiz']
 
     while True:
         try:
