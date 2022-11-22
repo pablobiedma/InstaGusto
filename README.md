@@ -1,5 +1,5 @@
 
-You can find a detailed explanation on [my website]([linkurl](https://pablobiedma.github.io/post9.html))
+You can find a detailed explanation on [my website](https://pablobiedma.github.io/post9.html)
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
