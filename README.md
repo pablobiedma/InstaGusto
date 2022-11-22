@@ -1,5 +1,5 @@
 
-You can find a detailed explanation on <a href="[about.html](https://pablobiedma.github.io/post9.html)">my website<a>
+You can find a detailed explanation on [my website]([linkurl](https://pablobiedma.github.io/post9.html))
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
