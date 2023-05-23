@@ -3,13 +3,13 @@ You can find a full explanation on [my website](https://pablobiedma.github.io/po
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Instagusto
+# InstaGusto
 
-Instagusto is an efficient Instagram bot that helps you gain thousands of followers and likes by providing likes to the hashtags you specify. It utilizes the power of Selenium to automate interactions with the Instagram platform.
+InstaGusto is an efficient Instagram bot that helps you gain thousands of followers and likes by providing likes to the hashtags you specify. It utilizes the power of Selenium to automate interactions with the Instagram platform.
 
 ## Requirements
 
-To run InstaGsto, you need the following prerequisites:
+To run InstaGusto, you need the following prerequisites:
 
 - **Python**: Ensure that you have a version of Python installed on your computer.
 
