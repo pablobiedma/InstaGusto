@@ -1,33 +1,51 @@
 
-You can find a detailed explanation on [my website](https://pablobiedma.github.io/post9.html)
-
+You can find a full explanation on [my website](https://pablobiedma.github.io/post9.html)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Efficient instagram bot that gives likes to the hashtags provided, giving you thousands of
-followers and likes.
+# Instagusto
 
-Selenium Documentation:
-http://selenium-python.readthedocs.io/
+Instagusto is an efficient Instagram bot that helps you gain thousands of followers and likes by providing likes to the hashtags you specify. It utilizes the power of Selenium to automate interactions with the Instagram platform.
 
-Gecodriver:
-https://github.com/mozilla/geckodriver/releases
+## Requirements
 
-In this case I used the bot for the mozilla firefox browser but if you look into it you can use any of
-them.
+To run Instagusto, you need the following prerequisites:
 
-To run this bot you’ll need:
+- **Python**: Ensure that you have a version of Python installed on your computer.
 
-A version of ​ python ​ installed in your computer.
+- **Selenium**: Install Selenium for Python by running the following command:
 
-Install ​ selenium ​ for python to run the bot in the browser. ​$ pip install selenium
+$ pip install selenium
 
-Install ​ geckodriver ​ from github
+- **Geckodriver**: InstaGusto is designed to work with the Mozilla Firefox browser, but it can be configured to work with other browsers as well. To use Instagusto with Firefox, you need to install Geckodriver, which acts as a bridge between Selenium and Firefox.
 
-Find geckodriver installation folder and get it out of that folder as you’ll need it together with your
-program to run it.
+- Download Geckodriver from the official repository: [Geckodriver Releases](https://github.com/mozilla/geckodriver/releases)
 
-From the terminal cd into the directory of the geckodriver and type in:
-$ move geckodriver ​/user/bin
+- Extract the Geckodriver files and locate the installation folder.
 
-Run the code
+- Move the Geckodriver executable file to a directory in your system's PATH. For example, if you're using Linux, you can use the following command from the terminal:
+  ```
+  $ sudo mv geckodriver /usr/bin
+  ```
+
+## Usage
+
+To run Instagusto, follow these steps:
+
+1. Open a terminal or command prompt.
+
+2. Change the current directory to the folder where you have the Instagusto code.
+
+3. Run the Instagusto script using the following command:
+
+$ python instagusto.py
+
+## Additional Information
+
+- Instagusto is currently optimized to work with the Mozilla Firefox browser, but you can configure it to work with other browsers supported by Selenium. Please refer to the Selenium documentation for more information: [Selenium Documentation](http://selenium-python.readthedocs.io/)
+
+- If you encounter any issues or have questions about Instagusto, please feel free to reach out to the project repository.
+
+Start gaining more followers and likes with InstaGusto today!
+
+
