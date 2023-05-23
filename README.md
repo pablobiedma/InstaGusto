@@ -15,7 +15,7 @@ To run InstaGsto, you need the following prerequisites:
 
 - **Selenium**: Install Selenium for Python by running the following command:  
  ```
-$ pip install seleniumn  
+$ pip install selenium 
  ```
 - **Geckodriver**: InstaGusto is designed to work with the Mozilla Firefox browser, but it can be configured to work with other browsers as well. To use Instagusto with Firefox, you need to install Geckodriver, which acts as a bridge between Selenium and Firefox.
 
