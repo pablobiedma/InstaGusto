@@ -5,7 +5,7 @@ from tkinter import simpledialog
 import time
 import random
 
-# author: Pablo Biedma ig: pablo_biedma
+# author: Pablo Biedma https://pablobiedma.github.io/
 
 
 class InstagramBot:   # todo add functionality , then develop app
@@ -83,17 +83,17 @@ if __name__ == "__main__":
     ig = InstagramBot(username, password)
     ig.login()
 
-    hashtags = ["like4follow","likeforfollow", 'followforlike','follow4like', 'film', 'movies','movie', 'petersellers', 'screenplay', 'script', 'writer', 'montgomeryclift',
-                'films', 'kubrick', 'FrançoisTruffaut','clinteastwood', 'billywilder', 'alfredhitchcock', 'orsonwelles', 'johnford', 'kirkdouglas', 'jacklemmon', 'laurenceoliver', 'jamesdean',
-                'kurosawa', 'cameroncrowe', 'fritzlang', 'Clouzot', 'bergman', 'BibiAndersson', 'hepburn', 'jamesstewart', 'carygrant', 'marylinmonroe', 'perfectshot', 'howardhawks', 'WilliamWyler', 'dustinhoffman',
-                'photography', 'filmmaking', 'filmmaker', 'rosenberg', 'CesareZavattini', 'barbarastanwyck','clarkgable', 'vintage', 'director', 'charleslaughton','stevemcqueen', 'marlendietrich',
-                'hollywood', 'bettedavis', 'spencertracy', 'audreyhepburn', 'katherinhepburn', 'henryfonda', 'jamestewart', 'follow4follow'
-                , 'humphreybogart', 'fredmcmurray', 'shirleymclaine', 'davidlean' ,'peterotoole','josephcotten','gregorypeck','barbarastanwyck',
-                'edwardgrobinson','marlonbrando','alpacino','jamesmason','gracekelly','mankiewicz','georgesanders','annebaxter','sidneylumet','johnhuston','williamholden','maxvonsydow',
-                'burtlancaster','vittoriodesica','maxophuls','joanfontaine','victorfleming', 'paulettegoddard', 'yvesmontand','rexharrison','edithhead','johnwayne',
-                'maureenohara','kimnovak','marlenedietrich', 'johnlund','jamescagney','blakeedwards','waltermatthau','rossellini','frankcapra','glennford'
-                , 'charliechaplin', 'busterkeaton', 'joseluisgarci', 'satyajitray', 'ernstlubitsch','franksinatra','stephanzweig', 'ottopreminger', 'garycooper', 'nataliewood', 'gretagarbo', 'paulnewman', 'robertredford', 'tonycurtis', 'jacklemmon','michaelcurtiz']
-
+    hashtags = ['pawelpawlowski', 'JoeeBrown','petersellers','montgomeryclift', 'SergioAmidei', 'GunnarBjörnstrand','jeanrenoir', 'pedroalmodovar',' JeanPierreLéaud', 'carolreed', 'AlidaValli', 'janefonda', 'katherineross', 'EliWallach', "federicofellini",
+                'stanleykubrick', 'luisbunuel', 'robertrossen', 'robertbresson', 'LeeRemick', 'FrançoisTruffaut','clinteastwood', 'billywilder', 'alfredhitchcock', 'victormature', 'orsonwelles', 'johnford', 'kirkdouglas', 'jacklemmon', 'laurenceoliver', 'jamesdean',
+                'akirakurosawa', 'cameroncrowe', 'fritzlang', 'HenriGeorgesClouzot', 'ErlandJosephson', 'veraclouzot', 'ingridbergman', 'igmarbergman', 'BibiAndersson', 'livullmann', 'jamesstewart', 'carygrant', 'MarilynMonroe', 'howardhawks', 'WilliamWyler', 'dustinhoffman',
+                'warrenbeaty', ' GeorgesMéliès ', 'alejandroamenabar', ' GloriaSwanson', 'ErichvonStroheim', 'GeorgeCScott', 'KarlMalden', 'RayMilland', '	SterlingHayden',
+                'LuisGarciaBerlanga', 'JacquesTati', 'CesareZavattini', 'barbarastanwyck','clarkgable','charleslaughton','stevemcqueen', 'marlendietrich', ' MichaelPowell',
+                'bettedavis', 'oliviadehavilland', 'spencertracy', 'audreyhepburn', 'katherinehepburn', 'henryfonda', 'jamestewart','peterbogdanovich', ' GeneHackman'
+                , 'humphreybogart', 'fredmcmurray', 'ShirleyMacLaine', 'jeansimmons', 'GeorgePeppard', 'davidlean' ,'peterotoole','josephcotten','gregorypeck','barbarastanwyck',
+                'edwardgrobinson','marlonbrando','alpacino', 'YasujirôOzu','jamesmason','gracekelly', 'donnareed','joanbennett','HermanJMankiewicz', 'JosephLMankiewicz','georgesanders','annebaxter','sidneylumet','johnhuston','williamholden','maxvonsydow',
+                'burtlancaster','vittoriodesica', 'ClaudetteColbert', 'GeneTierney', 'MichaelCaine','maxophuls','joanfontaine','victorfleming', 'paulettegoddard', 'yvesmontand','rexharrison','edithhead','johnwayne', "AbbasKiarostami",
+                'maureenohara','kimnovak','marlenedietrich', 'johnlund','jamescagney','blakeedwards','waltermatthau','robertorossellini','frankcapra','glennford', "sydneypollack", 'ritahayworth', "sidneypoitier"
+                , 'charliechaplin', 'busterkeaton', 'joseluisgarci', 'satyajitray', 'ernstlubitsch','franksinatra','stephanzweig', ' MarcelloMastroianni', 'ottopreminger', 'garycooper', 'nataliewood', 'gretagarbo', 'paulnewman', 'robertredford', 'tonycurtis', 'jacklemmon','michaelcurtiz']
     while True:
         try:
             # Choose a random hashtag
