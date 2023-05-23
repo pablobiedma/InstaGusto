@@ -9,7 +9,7 @@ Instagusto is an efficient Instagram bot that helps you gain thousands of follow
 
 ## Requirements
 
-To run Instagusto, you need the following prerequisites:
+To run InstaGsto, you need the following prerequisites:
 
 - **Python**: Ensure that you have a version of Python installed on your computer.
 
@@ -37,9 +37,9 @@ To run Instagusto, follow these steps:
 2. Change the current directory to the folder where you have the Instagusto code.
 
 3. Run the Instagusto script using the following command:
-
+  ```
 $ python instagusto.py
-
+  ```
 ## Additional Information
 
 - Instagusto is currently optimized to work with the Mozilla Firefox browser, but you can configure it to work with other browsers supported by Selenium. Please refer to the Selenium documentation for more information: [Selenium Documentation](http://selenium-python.readthedocs.io/)
